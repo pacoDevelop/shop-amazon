@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">amazon</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Productos Amazon</string>
+    <string name="nav_header_subtitle">Cosme y Paco</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Configuración</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_insert">Añadir producto</string>
+    <string name="menu_carrito">Carrito</string>
+    <string name="menu_listado">Listado Producto</string>
+    <string name="menu_pedido">Pedidos</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

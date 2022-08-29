@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.cosmenp.amazon.menu.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_detalleProducto"
+        android:name="com.cosmenp.amazon.menu.listado.DetalleProducto"
+        tools:layout="@layout/fragment_detalle_producto"/>
+
+    <fragment
+        android:id="@+id/nav_insert"
+        android:name="com.cosmenp.amazon.menu.insert.InsertFragment"
+        android:label="@string/menu_insert"
+        tools:layout="@layout/fragment_insert" />
+
+    <fragment
+        android:id="@+id/nav_listado"
+        android:name="com.cosmenp.amazon.menu.listado.ListadoFragment"
+        android:label="@string/menu_listado"
+        tools:layout="@layout/fragment_listado"/>
+
+    <fragment
+        android:id="@+id/nav_pedido"
+        android:name="com.cosmenp.amazon.menu.pedido.PedidoFragment"
+        android:label="@string/menu_pedido"
+        tools:layout="@layout/fragment_pedido" />
+    <fragment
+        android:id="@+id/nav_linea_pedido"
+        android:name="com.cosmenp.amazon.menu.pedido.LineaPedidosFragment"
+ />
+
+    <fragment
+        android:id="@+id/nav_carrito"
+        android:name="com.cosmenp.amazon.menu.carro.Carrito"
+        android:label="@string/menu_carrito"
+        tools:layout="@layout/fragment_carrito" >
+        <action
+            android:id="@+id/action_nav_carrito_to_nav_compra_finalizada"
+            app:destination="@id/nav_compra_finalizada"
+            app:popUpTo="@+id/nav_home" />
+        <action
+            android:id="@+id/action_nav_carrito_to_nav_listado"
+            app:destination="@id/nav_listado"
+            app:popUpTo="@+id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_compra_finalizada"
+        android:name="com.cosmenp.amazon.menu.carro.CompraFinalizada"
+        tools:layout="@layout/compra_finalizada"/>
+
+</navigation>
